@@ -1,0 +1,146 @@
+main {
+    width: 100%;
+    padding: 0rem 5rem;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#game-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+#selected-game {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+#selected-game img {
+    border-radius: 15px;
+    box-shadow: rgba(155, 159, 172, 0.27) 0px 0px 0.25em, rgba(179, 195, 227, 0.05) 0px 0.25em 1em;
+
+    margin-bottom: 1rem;
+}
+
+#selected-game h2, h3 {
+    color: white;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+#selected-game h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0.4rem;
+}
+
+#selected-game h3 {
+    color: rgb(159, 158, 158);
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.7rem;
+    row-gap: 2rem;
+
+    overflow-y: scroll;
+    max-height: 500px;
+
+    padding: 1rem 1.7rem;
+
+    border-left: solid 1px rgb(172, 171, 171, 30%);
+}
+
+.levels figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.6rem 0.55rem;
+
+    max-width: 148px;
+
+    background-color: rgb(8, 9, 28, 80%);
+    border-radius: 8px;
+}
+
+.levels figure:hover {
+    background-image: linear-gradient(-45deg, rgb(105, 141, 203, 70%), rgb(36, 144, 156, 70%),rgb(105, 141, 203, 70%));
+}
+
+.levels h2, h3 {
+    color: white;
+    margin: 0;
+    padding-left: 0.5rem;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+}
+
+.levels h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+}
+
+.levels h3 {
+    color: rgb(209, 208, 208);
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.levels figure img {
+    margin: 0;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+}
+
+.levels .clickable {
+    cursor: pointer;
+}
+  
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 950px) {
+  main {
+      padding-bottom: 1rem;
+  }
+
+  #game-info { 
+      flex-direction: column;
+      width: 80%;
+  }
+
+  .levels {
+      border-left: none; 
+      border-top: solid 1px rgb(172, 171, 171, 30%);
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      max-height: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #levels {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

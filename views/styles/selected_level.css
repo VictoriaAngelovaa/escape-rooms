@@ -1,0 +1,185 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#timer-answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+#level-info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#selected-level {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+#selected-level img {
+    border-radius: 15px;
+    box-shadow: rgba(155, 159, 172, 0.27) 0px 0px 0.25em, rgba(179, 195, 227, 0.05) 0px 0.25em 1em;
+
+    margin-bottom: 1rem;
+}
+
+#selected-level h2 {
+    color: white;
+    margin: 0;
+    padding-left: 0.5rem;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0.4rem;
+}
+
+#level-info button {
+    align-self: center;
+}
+
+#level-full-info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 4rem;
+    padding-left: 3rem;
+    border-left: solid 1px rgb(172, 171, 171, 30%);
+    word-wrap: break-word;
+}
+
+#level-full-info h2 {
+    font-size: 22px;
+    color: white;
+}
+
+#level-full-info p {
+    margin-block-start: 0.7rem;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0.1rem;
+}
+
+#level-full-info textarea {
+    margin-top: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+.timer {
+    font-family: sans-serif;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    background: rgb(8, 9, 28, 58%);
+    color: white;
+}
+
+.timer__part {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.timer__btn, .material-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 15px;
+}
+
+.material-button {
+    margin-right: 0;
+}
+
+.material-button:hover {
+    background: #24909C;
+}
+
+.big-material-button {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-top: 1.5rem;
+}
+
+.big-material-button .material-icons {
+    font-size: 19px;
+}
+
+.timer__btn--start, .material-button {
+    background: rgb(8, 9, 28);
+}
+
+.timer__btn--stop {
+    background: #3a080c;
+}
+
+.generic-input {
+    margin-left: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#material-container {
+    justify-content: center;
+}
+
+textarea{
+    padding: 0.5rem;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: solid 1px #9a9393;
+    font-size: 16px;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 1030px) {
+    main {
+        padding-bottom: 1rem;
+    }
+    #level-info { 
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #level-full-info {
+        align-self: center;
+        border-left: none; 
+        border-top: solid 1px rgb(172, 171, 171, 30%);
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+
+    #selected-level {
+        align-self: center;
+    }
+}

@@ -1,0 +1,40 @@
+h2 {
+    font-size: 25px;
+    color: white;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0.1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-right: 1rem;
+
+    background-color: rgb(8, 9, 28, 58%);
+    backdrop-filter: blur(30%);
+
+    padding: 4rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    #user-info {
+        width: 90%;
+        padding: 2rem;
+    }
+}

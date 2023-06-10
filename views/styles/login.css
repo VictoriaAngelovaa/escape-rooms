@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-width: 400px;
+}
+
+#username-input {
+  margin-bottom: 20px;
+}
+
+#register-button {
+  margin-top: 1rem;
+}
+
+#error-message {
+  padding: 1rem 1.7rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-width: thin;
+  border-style: solid;
+  border-color: red;
+  background-color: white;
+  color: red;
+  display: none;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 1px;
+}

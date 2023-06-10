@@ -1,0 +1,68 @@
+main {
+    display: block;
+}
+
+.headings-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#games-list {
+    gap: 5rem;
+}
+
+.info-card {
+    max-width: 230px;
+}
+
+.info-card h3 {
+    font-size: 16px;
+}
+
+#search {
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
+#search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: rgb(8, 9, 28);
+}
+
+#games-list h2 {
+    color: white;
+}
+
+.public-sign {
+    align-self: flex-start;
+
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0.3rem;
+
+    background-color: rgb(8, 9, 28, 0.8);
+    box-shadow: rgba(31, 49, 80, 0.25) 0px 1px 1px, rgba(48, 70, 108, 0.13)0px 0px 1px 1px;
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.generic-input {
+    font-size: 16px;
+}
+
+.generic-button {
+    margin-bottom: 0.5rem;
+}

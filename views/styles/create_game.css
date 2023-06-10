@@ -1,0 +1,109 @@
+#create-level {
+    width: 80%;
+    margin: 0;
+}
+
+#create-level-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#logo-name-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 2rem;
+}
+
+#logo {
+    width: 30%;
+    max-width: 220px;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#logo label span {
+    color: rgb(154, 147, 147);
+    font-size: 16px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.8rem;
+    border-radius: 21px;
+}
+
+#name-desc {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#name-desc textarea{
+    padding: 0.5rem;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: solid 1px #9a9393;
+    font-size: 16px;
+    margin-top: 0.3rem;
+}
+
+.other-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.other-info input, .other-info label {
+    width: 30%;
+}
+
+#label-resource,  #label-json-file{
+    font-size: 16px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-bottom: solid 1px rgb(154, 147, 147);
+    color: rgb(154, 147, 147);
+    cursor: pointer;
+}
+
+.generic-button {
+    margin-top: 1.7rem;
+    padding: 1rem 1.9rem;
+}
+
+.generic-button span {
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .other-info { flex-direction: column; align-items: center;}
+    .other-info input, .other-info label { width: 70%; margin-bottom: 1rem;}
+    #logo-name-desc { flex-direction: column; }
+}
